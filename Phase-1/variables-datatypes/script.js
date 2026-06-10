@@ -66,3 +66,39 @@ console.log(num4)
 console.log(num5)
 console.log(num6)
 console.log(num7)
+
+
+/* Type Conversion */
+
+
+// Question- 11 : Convert the string "100" into a number and print both the value and type.
+let str = "100"
+let num= Number(str)
+console.log(num, typeof(num))
+
+
+
+
+// Question- 12 : Convert the number 500 into a string and display its type.
+let a=500
+let str=String(a)
+console.log(typeof(str))
+
+
+
+// Question- 13 : Convert the value "true" into a Boolean and check the output.
+var s="true"
+var a=Boolean(s)
+console.log(a, typeof(a))
+
+
+//Predict and verify the output of "10" + 5
+var b="10"
+var c= 5
+console.log(b+c)
+
+
+// Predict and verify the output of "10" - 5
+var a= "10"
+ var b=5
+ console.log(a-b)
