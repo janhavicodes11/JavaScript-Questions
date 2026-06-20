@@ -76,7 +76,7 @@ if(num1>num2){
 
 
 // Question-42 : Ask the user for marks and assign grades according to predefined criteria.
-/*let marks=Number(prompt("Enter your marks"))
+let marks=Number(prompt("Enter your marks"))
 if(marks>=90 && marks<=100){
     console.log(marks, "A")
 }else if(marks>=80 && marks<=85){
@@ -87,4 +87,51 @@ if(marks>=90 && marks<=100){
     console.log(marks, "D")
 }else{
     console.log(marks, "E")
-}*/
+}
+
+
+
+
+// Question-43 : Ask the user to enter a character and determine whether it is a vowel or consonant.
+let char=prompt("Enter a character : ")
+if(char === "a" || char==="e" || char==="i" || char==="o" || char==="u" || char==="A"|| char==="E"|| char==="I"|| char==="O"|| char==="U"){
+    console.log(char, "Vowel")
+}else{
+    console.log("Consonent")
+}
+
+//  Program to Check Vowel or Consonant in JavaScript Using Character Codes
+let char=prompt("Enter a character")
+let code = char.toLowerCase().charCodeAt(0);
+if (code === 97 || code === 101 || code === 105 || code === 111 || code === 117) {
+  console.log("It's a vowel.");
+}else{
+  console.log("It's a consonant.");
+}
+
+
+
+
+
+// Question-44 : Determine whether a character entered by the user is uppercase or lowercase.
+let char=prompt("Enter a charcter")
+let code = char.charCodeAt(0);
+
+if (code >= 65 && code <= 90) {
+    console.log("Uppercase");
+}
+else if (code >= 97 && code <= 122) {
+    console.log("Lowercase");
+}
+
+
+
+
+// Question-45 : Check whether a number is divisible by both 5 and 11.
+let num=Number(prompt("Enter a number"))
+if(num%5===0 && num%11===0){
+    console.log("Its correct",num)
+}else{
+    console.log("its not divisble")
+}
+
