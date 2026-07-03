@@ -180,3 +180,6 @@ if(num%5===0 && num%11===0){
 // SWITCH-STATEMENTS :
  // Question-46 : Ask the user for a day number (1–7) and display the corresponding weekday.
 
+
+
+
