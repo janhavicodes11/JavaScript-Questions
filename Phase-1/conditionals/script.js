@@ -169,16 +169,93 @@ if(num%5===0 && num%11===0){
  }
 
 
+ // Question-47 : Create a calculator that performs addition, subtraction, multiplication, or division using a switch statement.
+
+let calc1=Number(prompt("Enter a number :"))
+let calc2=Number(prompt("Enter a number :"))
+let result=prompt("Enter a symbol")
+switch(result){
+    case "+":
+        console.log(calc1+calc2)
+        break;
+         case "-":
+        console.log(calc1-calc2)
+        break;
+         case "*":
+        console.log(calc1*calc2)
+        break;
+         case "/":
+        console.log(calc1/calc2)
+        break;
+        default:
+            console.log("Enter wrong sign")
+}
 
 
 
 
+// Question-48: Ask the user for a month number and display the corresponding month name.
+let month_num=Number(prompt("Enter any month number"))
+switch(month_num){
+    case 1:
+        console.log("Its January")
+        break;
+        case 2:
+        console.log("Its Feb")
+        break;
+        case 3:
+        console.log("Its March")
+        break;
+        case 4:
+        console.log("Its April")
+        break;
+        case 5:
+        console.log("Its May")
+        break;
+        case 6:
+        console.log("Its June")
+        break;
+        case 7:
+        console.log("Its July")
+        break;
+        case 8:
+        console.log("Its August")
+        break;
+        case 9:
+        console.log("Its Sept")
+        break;
+        case 10:
+        console.log("Its Oct")
+        break;
+        case 11:
+        console.log("Its Nov")
+        break;
+        case 12:
+        console.log("Its Dec")
+        break;
+        default:
+            console.log("Wrong month number entered ")
+
+}
 
 
 
 
-// SWITCH-STATEMENTS :
- // Question-46 : Ask the user for a day number (1–7) and display the corresponding weekday.
+ // Question-50 : Create a simple restaurant menu system using switch statements.
+ let order=prompt("Enter your food items : ")
+ switch(order){
+    case "noodles":
+        console.log("Will get in 2 min")
+        break;
+        case "pasta":
+        console.log("Will take 20 mins")
+        break;
+        default:
+            console.log("NOT IN THE MENU")
+ }
+
+
+
 
 
 
