@@ -70,3 +70,39 @@ while(num>0){
     num=Math.floor(num/10)
 }
 console.log(reverse)
+
+
+
+
+// Question-58 : Calculate the sum of all digits in a number.
+let num = Number(prompt("Enter a number:"));
+let sum = 0;
+
+while (num > 0) {
+    let digit = num % 10;
+    sum = sum + digit;
+    num = Math.floor(num / 10);
+}
+
+console.log(sum);
+
+
+
+
+
+// Question-59 : Find the largest digit present in a number.
+let num = Number(prompt("Enter a number"));
+
+let largest = 0;
+
+while (num > 0) {
+    let digit = num % 10;
+
+    if (digit > largest) {
+        largest = digit;
+    }
+
+    num = Math.floor(num / 10);
+}
+
+console.log("Largest digit is:", largest);
