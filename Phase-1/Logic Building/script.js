@@ -45,3 +45,23 @@ if(withdrawal<=balance){
 }else{
     console.log("Insufficient balance!")
 }
+
+
+
+
+// Question-74 : Create an electricity bill calculator based on units consumed.
+let units= Number(prompt(" Enter the units consumed : "))
+let bill; 
+if(units<=100){
+    bill=units*5
+    console.log("The  total amount is", bill)
+}
+else if(units<=200){
+    bill=units*7
+    console.log("The total amount is : ",bill)
+}else if(units>200){
+    bill=units*10
+    console.log("The total amount is",bill)
+}else{
+    console.log("Enter Valid unit")
+}
