@@ -32,3 +32,16 @@ while (num !== randomNumber) {
 }
 
 console.log("🎉 Congratulations! You guessed the correct number.");
+
+
+
+
+// Question-73 : Simulate an ATM withdrawal system that checks balance before allowing withdrawals.
+let balance=10000
+let withdrawal=Number(prompt("Enter the amount : "))
+if(withdrawal<=balance){
+   console.log("Withdrawal successful!")
+   console.log("The remaining balance is ", balance=balance-withdrawal)
+}else{
+    console.log("Insufficient balance!")
+}
