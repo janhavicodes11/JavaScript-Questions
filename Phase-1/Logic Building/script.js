@@ -116,3 +116,15 @@ else{
     console.log("Amount of tax to be paid : ", tax)
     console.log("Remaining income : ", reincome)
 }
+
+
+
+
+// Question-77 : Create a login system that checks whether the entered username and password are correct.
+let username = prompt("Enter the username : ");
+let password = Number(prompt("Enter the password : "));
+if (username === "Janhavi" && password === 1234) {
+    console.log("Login successful.");
+} else {
+    console.log("Invalid username or password.");
+}
