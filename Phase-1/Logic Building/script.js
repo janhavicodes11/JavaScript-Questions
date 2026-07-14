@@ -65,3 +65,22 @@ else if(units<=200){
 }else{
     console.log("Enter Valid unit")
 }
+
+
+
+
+
+// Question-75 : Build a BMI calculator that categorizes users as Underweight, Normal, Overweight, or Obese.
+let weight=Number(prompt("Enter the weight :"))
+let height=Number(prompt("Enter the height : "))
+let BMI= weight/(height*height)
+if(BMI<18.5){
+    console.log(BMI,"Underweight")
+}
+else if(BMI<=24.9){
+console.log(BMI, "Normal")
+} else if(BMI<=29.9){
+    console.log(BMI, "Overweigth")
+}else{
+    console.log("Obese")
+}
