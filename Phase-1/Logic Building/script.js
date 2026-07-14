@@ -84,3 +84,35 @@ console.log(BMI, "Normal")
 }else{
     console.log("Obese")
 }
+
+
+
+
+// Question-76 : Create a simple income tax calculator based on income slabs.
+let income=Number(prompt("Enter the amount you earn : "))
+let tax;
+let reincome;
+if(income<=250000){
+    tax=income*0/100
+    reincome=income-tax
+    console.log("Amount of tax to be paid : ", tax)
+    console.log("Remaining income : ", reincome)
+}
+else if(income>=250001 && income<=500000){
+      tax=income*5/100
+    reincome=income-tax
+    console.log("Amount of tax to be paid : ", tax)
+    console.log("Remaining income : ", reincome)
+}
+else if(income>=500001 && income<=1000000){
+    tax=income*20/100
+    reincome=income-tax
+    console.log("Amount of tax to be paid : ", tax)
+    console.log("Remaining income : ", reincome)
+}
+else{
+    tax=income*30/100
+    reincome=income-tax
+    console.log("Amount of tax to be paid : ", tax)
+    console.log("Remaining income : ", reincome)
+}
