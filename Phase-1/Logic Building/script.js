@@ -128,3 +128,42 @@ if (username === "Janhavi" && password === 1234) {
 } else {
     console.log("Invalid username or password.");
 }
+
+
+
+
+
+// Question-78 : Write a password strength checker that validates password length and complexity.
+let password = prompt("Enter your password:");
+
+let hasUpper = false;
+let hasLower = false;
+let hasNumber = false;
+let hasSpecial = false;
+
+if (password.length >= 8) {
+
+    for (let i = 0; i < password.length; i++) {
+        let ch = password[i];
+        let ascii = ch.charCodeAt(0);
+
+        if (ascii >= 65 && ascii <= 90) {
+            hasUpper = true;
+        } else if (ascii >= 97 && ascii <= 122) {
+            hasLower = true;
+        } else if (ascii >= 48 && ascii <= 57) {
+            hasNumber = true;
+        } else {
+            hasSpecial = true;
+        }
+    }
+
+    if (hasUpper && hasLower && hasNumber && hasSpecial) {
+        console.log("✅ Strong Password");
+    } else {
+        console.log("❌ Weak Password");
+    }
+
+} else {
+    console.log("❌ Password must be at least 8 characters long.");
+}
