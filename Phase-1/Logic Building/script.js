@@ -167,3 +167,8 @@ if (password.length >= 8) {
 } else {
     console.log("❌ Password must be at least 8 characters long.");
 }
+
+
+
+
+// Question- 79 : Find the Greatest Common Divisor (GCD) of two numbers.
