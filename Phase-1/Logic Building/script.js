@@ -172,3 +172,19 @@ if (password.length >= 8) {
 
 
 // Question- 79 : Find the Greatest Common Divisor (GCD) of two numbers.
+let num1=Number(prompt("Enter a num 1: "))
+let num2=Number(prompt("Enter num 2 : "))
+let smaller;
+let gcd 
+if(num1<num2){
+    smaller=num1
+}else{
+    num2
+}
+for (let i = 1; i <= smaller; i++) {
+    if (num1 % i === 0 && num2 % i === 0) {
+        gcd = i;
+    }
+}
+
+console.log("The GCD is:", gcd);
