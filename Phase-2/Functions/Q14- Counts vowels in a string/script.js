@@ -17,3 +17,6 @@ function vowel(str) {
 }
 
 console.log(vowel("Janhavi")); // 3
+
+
+
